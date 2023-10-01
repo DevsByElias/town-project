@@ -4,6 +4,8 @@
 }
 body {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 10px;
   overflow-x: hidden;
 }
@@ -38,7 +40,6 @@ body {
   z-index: 1;
   margin-top: 10vh;
   box-sizing: border-box;
-
   text-align: center;
   font-family: "Lato", sans-serif;
   top: 2px;
@@ -74,6 +75,7 @@ h4 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-bottom: 2rem;
 }
 .spots {
   display: flex;
@@ -83,6 +85,13 @@ h4 {
 }
 .spots > div {
   text-align: center;
+}
+.spot {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 h5 {
   font-size: 25px;
@@ -96,4 +105,25 @@ h5 {
   border-style: solid;
   border-radius: 30px;
   border-color: #7a7a7a;
+}
+
+@media only screen and (max-width: 800px) {
+  .spots {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-container {
+    margin-bottom: 5rem;
+  }
+  .header-container {
+    font-size: 1.6rem;
+  }
+  .header-container > h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
 }
